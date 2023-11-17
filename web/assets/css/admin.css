@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  background-color: var(--body);
+  font-family: var(--font);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+header {
+    background-color: var(--tertiary);
+    display: inline-block;
+    min-width: 100%;
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+/*Hamburger Icon */
+  .menu-icon{
+    display: none;
+  }
+  .menu-items{
+    display: none;
+  }
+
+/* End of Hamburger Icon */
+
+h1{
+
+    font-size: 35px;
+    color: var(--primary);
+    margin: 22px 30px 30px;
+    font-weight: 600;
+
+}
+/* End f Header */
+
+
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    width: 110px;
+    position: absolute;
+    left: 0;
+    background-color:var(--sidebarbgcolor);
+    filter: drop-shadow(0px 4px 4px rgba(203, 235, 254, 1));
+  }
+  .fa-ticket::before {
+      font-size: 30px;
+      color: var(--secondary);
+  }
+  
+  .fa-ticket::before {
+    font-size: 30px;
+    color: var(--secondary);
+  }
+  
+  .fa-user-friends::before {
+    font-size: 30px;
+    color: var(--secondary);
+  }
+  .fa-user-circle::before{
+    font-size: 30px;
+    color: var(--secondary);
+  }  
+  .fa-sign-out-alt::before{
+    font-size: 30px;
+    color: var(--secondary);
+  
+  } 
+  
+  .sidebar a {
+      padding: 30px;
+      text-decoration: none;
+      color: var(--sidebarAcolor);
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 8px;
+    }
+  .sidebar a:hover{
+      color: var(--sidebarHovercolor);
+      background-color:var(--primary); 
+      
+    }
+    a:nth-child(4){
+          font-size: 8px;
+          position: absolute;
+          bottom: 1.5%;
+      }
+   
+  .sidebar a:nth-child(4):hover{
+        color: var(--primary);
+        background-color: var(--editicon);
+    }
+  
+  /* End of Sidebar */
+
+  .panel {
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    margin: auto;
+  }
+  .topAdmin{
+    width: 100%;
+    height: 80vh;
+    margin: 5px;
+    padding:5%;
+    padding-top: 7%;
+}
+
+
+
+.adminOne, .adminTwo{
+    border: var(--tablepanelborder);
+    filter: drop-shadow(0px 4px 4px rgba(221 ,221, 221,1));
+    border-radius: 5px;
+    background-color: var(--primary);
+    width: 45%;
+    height: 30vh;
+
+}
+.adminOne{
+    margin: auto;
+}
+.Armand{
+    position: absolute;
+    max-width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    top: 4%;
+    left: 46%;
+    z-index: 2;
+}
+.adminOne h4{
+    text-align: center;
+    color: var(--secondary);
+    font-size: 18px;
+    margin-top: 12%;
+    padding: 10px;
+}
+.adminOne .descriptionDetails{
+    width: 100%;
+    color: var(--trcolor);
+    letter-spacing: 2px;
+    padding: 20px;
+    margin: auto;
+
+}
+.adminOne:hover{
+    border: 1px solid var(--secondary) ;
+   
+}
+.adminTwo{
+    margin: 10% auto auto;
+
+}
+.adminTwo:hover{
+    border: 1px solid var(--secondary) ;
+    
+}
+
+
+.lokipic{
+    position: absolute;
+    max-width: 8%;
+    height: 10%;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    bottom: 41%;
+    left: 46%;
+    z-index: 2;
+}
+
+.descriptionDetails p {
+    color: var(--secondary);
+    text-align: left;
+    padding: 10px;
+}
+.descriptionDetails span{
+    color: var(--trcolor);
+    font-size: 14px;
+}
+
+
+.adminTwo h4{
+    text-align: center;
+    color: var(--secondary);
+    font-size: 18px;
+    margin-top: 15%;
+}
+
+.adminTwo .description-details{
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    color: var(--trcolor);
+    letter-spacing: 2px;
+}
+.description-details p{
+    color: var(--secondary);
+    text-align: left;
+    padding: 10px;
+}
+.description-details span{
+    color: var(--trcolor);
+    font-size: 14px;
+}
+
+/*End of main Content */
+
+
+@media screen  and (max-width: 720px){
+ 
+    .search-container{
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+    .sidebar{
+        display: none;
+    }
+    /* Hamburger Icon */
+    
+   .menu-icon {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+  }
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu-items {
+    color: white;
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100px;
+    padding: 10px;
+    background-color: #00568A;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+
+.menu-items li {
+  margin-top: 50%;
+  padding: 20px;
+}
+.menu-items li a{
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.menu-items li a:hover{
+  text-decoration: underline;
+}
+
+
+.logout{
+  font-size: 14px;
+  background-color: var(--editicon);
+}
+
+.menu-icon.clicked .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.menu-icon.clicked .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.clicked .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.menu-icon.clicked + .menu-items {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top:99%;
+  left: 0;
+  animation: slideDown 0.3s ease-in-out;
+  z-index: 1;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* End of Hamburger Icon */
+
+
+.adminOne, .adminTwo{
+    min-width: 100%;
+    max-width: 100%;
+}
+.Armand, .lokipic{
+    display: none;
+}
+.adminOne{
+    margin-top: 10%;
+}
+.adminOne h4{
+    margin-top: 5%;
+    font-size: 20px;
+}
+.adminTwo h4{
+    margin-top: 8%;
+    font-size: 20px;
+}
+.adminTwo{
+    margin-top: 20%;
+}
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .sidebar{
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+     /* Hamburger Icon */
+    
+   .menu-icon {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+  }
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu-items {
+    color: white;
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100px;
+    padding: 10px;
+    background-color: #00568A;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+
+.menu-items li {
+  margin-top: 50%;
+  padding: 20px;
+}
+.menu-items li a{
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.menu-items li a:hover{
+  text-decoration: underline;
+}
+
+
+.logout{
+  font-size: 14px;
+  background-color: var(--editicon);
+}
+
+.menu-icon.clicked .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.menu-icon.clicked .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.clicked .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.menu-icon.clicked + .menu-items {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top:99%;
+  left: 0;
+  animation: slideDown 0.3s ease-in-out;
+  z-index: 1;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* End of Hamburger Icon */
+
+
+.adminOne, .adminTwo{
+    min-width: 70%;
+    max-width: 75%;
+}
+.Armand{
+    top: 1%;
+    width: 60px;
+}
+.lokipic{
+    bottom: 48%;
+    width: 80px;
+}
+
+}
